@@ -1,2 +1,2 @@
 # SuperstitiousHorse-Updates
-Lucky Horse macOS releases and Sparkle update feed
+Superstitious Horse macOS releases and Sparkle update feed
