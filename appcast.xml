@@ -1,6 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
   <channel>
+    <item>
+      <title>Superstitious Horse 1.1</title>
+      <sparkle:version>5</sparkle:version>
+      <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
+      <sparkle:description>Superstitious Horse 1.1 is ready to install.</sparkle:description>
+      <enclosure url="https://github.com/rollr76518/SuperstitiousHorse-Updates/releases/download/v1.1-b5/SuperstitiousHorse-1.1-b5.zip" sparkle:edSignature="btDiZa3utlKkOYLOpESUCzf57HCyZmNOI4VFCrhJBfSI8FVXf33JV2SG/7OLrpoJZipWpmdY1h2DjtLaRRsyBw==" length="4523638" type="application/zip" />
+    </item>
     <title>Superstitious Horse Updates</title>
     <link>https://rollr76518.github.io/SuperstitiousHorse-Updates/</link>
     <description>Updates for the macOS version of Superstitious Horse.</description>
