@@ -64,11 +64,24 @@
 
     .intro {
       max-width: 29ch;
-      margin-bottom: 3.5rem;
+      margin-bottom: 1.4rem;
       color: #514d5b;
       font-size: clamp(1.18rem, 2.6vw, 1.55rem);
       line-height: 1.65;
     }
+
+    .guide-link {
+      display: inline-block;
+      margin-bottom: 3.5rem;
+      padding: .72rem 1.1rem;
+      border: 1px solid #d9d0ef;
+      border-radius: 11px;
+      background: #f0ecfa;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .guide-link:hover { background: #e8e0fa; }
 
     h2 {
       margin-bottom: 1.35rem;
@@ -192,22 +205,23 @@
   <main class="container">
     <p class="eyebrow">MAC 版</p>
     <h1>迷信的馬</h1>
-    <p class="intro">查看九宮飛星、整理家人命盤，找到適合自己的添運方向。</p>
+    <p class="intro">查看九宮飛星，把多位家人的添運小物整理在同一張方位圖上。</p>
+    <a class="guide-link" href="tutorial/">第一次使用？跟著範例看教學</a>
 
     <section aria-labelledby="screenshots-title">
       <h2 id="screenshots-title">看看 App 裡的畫面</h2>
       <div class="screenshots">
         <figure>
-          <a href="images/01-overview.png" aria-label="查看九宮飛星總覽畫面原圖">
-            <img src="images/01-overview.png" width="2880" height="1800" alt="Mac 版九宮飛星總覽，左側整理家人成員與住宅方位，右側顯示九個宮位的年度飛星。">
+          <a href="images/tutorial/01-family-overview.jpg" aria-label="查看三位範例成員與九宮盤的原圖">
+            <img src="images/tutorial/01-family-overview.jpg" width="2048" height="1536" alt="Mac 版 2026 年範例畫面。左側列出火、木、水三種五行的家人，右側是九宮盤。">
           </a>
-          <figcaption>九宮飛星與家人資訊，一起查看。</figcaption>
+          <figcaption>三位家人的宮位，在同一張九宮盤查看。</figcaption>
         </figure>
         <figure>
-          <a href="images/02-palace-details.png" aria-label="查看宮位詳情畫面原圖">
-            <img src="images/02-palace-details.png" width="2880" height="1800" loading="lazy" alt="Mac 版東北宮位詳情，顯示飛星說明、五行關係及適合的色彩與擺設建議。">
+          <a href="images/tutorial/05-family-selection-overview.jpg" aria-label="查看三位範例成員添運總覽的原圖">
+            <img src="images/tutorial/05-family-selection-overview.jpg" width="2048" height="1536" loading="lazy" alt="Mac 版 2026 年範例畫面。勾選東南方紅色地毯後，左側總覽顯示已選小物與宮位對應。">
           </a>
-          <figcaption>點開宮位，細看飛星與添運建議。</figcaption>
+          <figcaption>勾選小物後，在左側總覽看見它對應哪些家人。</figcaption>
         </figure>
       </div>
     </section>
