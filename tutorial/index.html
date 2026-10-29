@@ -31,9 +31,10 @@
     .site-header { border-bottom: 1px solid var(--line); }
     .site-header .container { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
     .brand { color: var(--ink); font-size: .98rem; font-weight: 750; letter-spacing: .03em; text-decoration: none; }
-    .site-header nav { display: flex; align-items: center; gap: clamp(.8rem, 3vw, 2rem); font-size: .93rem; font-weight: 650; }
-    .site-header nav a { text-decoration: none; }
-    .site-header nav a:hover { text-decoration: underline; }
+    .page-nav { display: flex; align-items: center; gap: .3rem; font-size: .93rem; font-weight: 650; }
+    .page-nav a { padding: .4rem .7rem; border-radius: 9px; text-decoration: none; white-space: nowrap; }
+    .page-nav a:hover { background: var(--soft); }
+    .page-nav a[aria-current="page"] { background: var(--soft); color: #332585; }
     .hero { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: center; gap: clamp(2rem, 5vw, 4rem); padding-block: clamp(3rem, 7vw, 6rem); }
     .eyebrow { margin-bottom: 1rem; color: #6a568a; font-size: .85rem; font-weight: 750; letter-spacing: .1em; }
     h1 { max-width: 11ch; margin-bottom: 1.3rem; font-size: clamp(2.7rem, 5.2vw, 4.6rem); line-height: 1.18; letter-spacing: -.045em; }
@@ -94,7 +95,7 @@
     }
     @media (max-width: 480px) {
       .site-header .container { min-height: 66px; }
-      .site-header nav a:first-child { display: none; }
+      .brand span { display: none; }
       .primary-link { width: 100%; }
       .hero-actions { align-items: stretch; }
       .recommendation-focus .image-frame a { height: min(118vw, 460px); overflow: hidden; }
@@ -109,7 +110,7 @@
   <header class="site-header">
     <div class="container">
       <a class="brand" href="../index.html">迷信的馬 <span lang="en">Superstitious Horse</span></a>
-      <nav aria-label="頁面導覽"><a href="#steps">教學步驟</a><a href="#questions">常見問題</a><a href="../index.html">下載 Mac 版</a></nav>
+      <nav class="page-nav" aria-label="頁面導覽"><a href="../index.html">Mac 版下載</a><a href="index.html" aria-current="page">使用教學</a></nav>
     </div>
   </header>
 

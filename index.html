@@ -31,16 +31,13 @@
       margin-inline: auto;
     }
 
-    header {
-      padding: 1.4rem 0;
-      border-bottom: 1px solid #e7e2dd;
-    }
-
-    .brand {
-      font-size: .95rem;
-      font-weight: 700;
-      letter-spacing: .04em;
-    }
+    .site-header { border-bottom: 1px solid #e7e2dd; }
+    .site-header .container { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .brand { color: #26243a; font-size: .98rem; font-weight: 750; letter-spacing: .03em; text-decoration: none; }
+    .page-nav { display: flex; align-items: center; gap: .3rem; font-size: .93rem; font-weight: 650; }
+    .page-nav a { padding: .4rem .7rem; border-radius: 9px; text-decoration: none; white-space: nowrap; }
+    .page-nav a:hover { background: #f0ecfa; }
+    .page-nav a[aria-current="page"] { background: #f0ecfa; color: #332585; }
 
     main { padding: clamp(3rem, 7vw, 6rem) 0 5rem; }
 
@@ -188,6 +185,7 @@
     footer nav { display: flex; flex-wrap: wrap; gap: .8rem 1.5rem; }
 
     @media (max-width: 680px) {
+      .brand span { display: none; }
       .screenshots { grid-template-columns: 1fr; gap: 2rem; }
       .release-link { display: block; width: fit-content; margin-left: 0; }
     }
@@ -198,8 +196,11 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="container brand">迷信的馬 <span lang="en">Superstitious Horse</span></div>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">迷信的馬 <span lang="en">Superstitious Horse</span></a>
+      <nav class="page-nav" aria-label="頁面導覽"><a href="index.html" aria-current="page">Mac 版下載</a><a href="tutorial/index.html">使用教學</a></nav>
+    </div>
   </header>
 
   <main class="container">
